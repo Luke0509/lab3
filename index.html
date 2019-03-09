@@ -4,16 +4,16 @@
 <head>
   <link rel="stylesheet" href="./styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <title>Daily NBA</title>
+  <title>Monthly NBA</title>
 </head>
 <body>
-  <h1>Monthly NBA</h1>
+  <h1>Monthly NBA games</h1>
   <div id="app">
     <div v-if="loading">
       <p>Loading...</p>
     </div>
     <div v-else>
-      <h2>March games</h2>
+      <h2>March games so far</h2>
       <ul>
         <li v-for="item in current.data">
           <label><b>{{item.home_team.abbreviation}}:</b> {{ item.home_team_score }}</label>
@@ -26,7 +26,7 @@
 
 <footer class="footer">
   <div class="nav-item nav-link text-center py-3">TAs only:
-    <a href="https://github.com/Luke0509/FlipGuide"> Github Repository</a>
+    <a href="https://github.com/Luke0509/lab3"> Github Repository</a>
   </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
